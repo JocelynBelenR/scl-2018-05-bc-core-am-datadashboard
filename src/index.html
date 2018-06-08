@@ -3,9 +3,95 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="grid.css" />
+
   </head>
-  <body>
-    <script src="main.js"></script>
+  <body> 
+    <div class="container">  <!-- inicio del container -->
+      <div class="row"> <!-- inicio primer row -->
+            <div class="col-3 primera_seccionuno"> <img src="img/Logofondoblanco.JPG" alt="">  </div>
+            <div class="col-9 primera_seccion">  <H2>  Dashboard Laboratoria   </H2>  </div>
+      </div> <!-- fin primer row -->
+
+      <div class="row"> <!-- inicio segundo row -->
+          <div class="col-4 segunda_seccion"> 
+              <select id="menupais">
+                  <option value="Brasil">Brasil</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Peru">Peru</option>
+              </select>
+          </div>
+
+          <div class="col-4 segunda_seccion"> 
+              <select id="menupais">
+                  <option value="Chileam">scl20181-am</option>
+                  <option value="Chilepm">scl20181-pm</option>
+                  <option value="Mexicoam">mex20181-am</option>
+                  <option value="Mexicopm">mex20181-am </option>
+              </select>
+          </div>
+
+      </div> <!-- FIN segundo row -->
+
+      <div class="row"> <!-- FIN tercer row -->
+
+
+      </div>
+
+
+
+
+      <div class="row"> <!-- inicio cuarto row -->
+        <div class="col-2 tercera_seccionuno"> 
+              <div class="sidebar">
+               <li class="tabs-title is-active"><a href="#panel1v">Dashboard</a></li>
+               <li class="tabs-title"><a href="#panel2v">Configuración </a></li>
+               <li class="tabs-title"><a href="#panel3v">Ayuda </a></li>
+              </div>
+      
+        </div>
+
+        <div class="col-3 tercera_secciondos"> 
+        <button id="botonuno"> Visión General </button>
+        </div>
+
+        <div class="col-3 tercera_secciondos"> 
+        <button id="botondos"> Estudiantes </button>
+        </div>
+
+        <div class="col-3 tercera_secciondos"> 
+
+        <button id="botontres"> Profesores </button>
+        </div>
+    
+
+      </div> <!-- FIN tercer row -->
+
+      
+      <div class="row"> <!-- inicio cuarto row -->
+        <div class="col-2 tercera_seccion">
+            
+        </div>
+
+        <div class="col-10 cuarta_seccion">
+            <div class="col-10 cuarta_secciondos">
+                <div class="content"> 
+  
+                </div>
+            </div>
+        </div>
+        
+    </div> <!-- FIN  cuarto row -->
+
+
+
+
+      <script src="main.js"></script>
+      <script src="data.js"></script>
+
+    </div> <!-- fin del container -->
   </body>
 </html>

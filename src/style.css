@@ -1,0 +1,70 @@
+.primera_seccionuno {
+    background-color:white;
+    height: 100px;
+}
+
+.primera_seccion {
+    background-color:#FFE521;
+    border: 2px solid white;
+    height: 100px;
+    font-family: 'Bitter', serif;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+#menupais {
+    width:250px; /*Le establecemos un ancho*/
+    margin:0 auto; /*Centramos automaticamente*/
+    position: center;
+}
+
+
+.segunda_seccion {
+    border: 2px solid white;
+    height: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tercera_seccionuno {
+    background-color:#FFE521;
+    border: 2px solid white;
+    font-family: 'Bitter', serif;
+    width: 50px;
+    height: 300px;
+}
+
+.tercera_secciondos {
+    border: 2px solid white;
+    font-family: 'Bitter', serif;
+}
+
+#botonuno {
+    position: absolute;
+    font-size: 15px;
+    width: 120px;
+    background-color: #56F89A;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#botondos {
+    position: absolute;
+    font-size: 15px;
+    width: 120px;
+    background-color: #56F89A;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#botontres {
+    position: absolute;
+    font-size: 15px;
+    width: 120px;
+    background-color: #56F89A;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
