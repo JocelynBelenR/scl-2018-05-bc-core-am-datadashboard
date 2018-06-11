@@ -52,6 +52,26 @@ Prototipo de alta fidelidad para pantalla de estudiantes, el país y cohort fuer
 
 ![GitHub Logo](src/img/prototipo-02.png)
 
-Prototipo de alta fidelidad para pantalla de responsive. 
+Sketch de vista general para pantalla de responsive. 
 
-![GitHub Logo](src/img/prototipo-celular.jpg)
+![GitHub Logo](src/img/sketch-celular-01.jpg)
+
+Segundo Sketch para la busqueda por alumnos en pantallas de responsive.
+
+![GitHub Logo](src/img/sketch-celular-02.jpg)
+
+Prototipo de baja fidelidas para la primera vista de pantalla responsive.
+
+![GitHub Logo](src/img/pantalla-responsive-01.png)
+
+Prototipo de baja fidelidas para la primera vista de pantalla responsive.
+
+![GitHub Logo](src/img/pantalla-responsive-02.png)
+
+Prototipo de alta fidelidad para pantalla de responsive de manera general. 
+
+![GitHub Logo](src/img/prototipo-celular-01.jpg)
+
+Prototipo de alta fidelidad para pantalla de responsive para el listado completo. 
+
+![GitHub Logo](src/img/prototipo-celular-02.jpg)
