@@ -10,8 +10,6 @@
     font-family: 'Bitter', serif;
 }
 
-
-
 img {
     width: 100%;
 }
@@ -21,20 +19,10 @@ img {
     margin:0 auto; /*Centramos automaticamente*/
     position: center;
 }
-
-
 .segunda_seccion {
     border: 2px solid white;
     height: 100px;
     font-family: 'Open Sans', sans-serif;
-}
-
-.tercera_seccionuno {
-    background-color:#FFE521;
-    border: 2px solid white;
-    font-family: 'Bitter', serif;
-    width: 50px;
-    height: 300px;
 }
 
 .tercera_secciondos {
@@ -67,4 +55,56 @@ img {
     background-color: #56F89A;
     color: black;
     font-family: 'Open Sans', sans-serif;
+}
+
+.vertical-menu {
+    width: 300px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+    background-color: #FFE521; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vertical-menu a:hover {
+    background-color: #56F89A; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #FF009E; /*color verde del enlace "activo / actual"  */
+    color: white;
+}
+
+p {
+    border: 1px solid powderblue;
+    padding: 30px;
+}
+
+
+
+@media (min-width: 320px) and (max-width:768px) {
+    [Class="row"] {
+        width:100%;
+        height:auto;
+        margin-left:10px; }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    [class*="col-"] {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .row{
+        width: 100%; 
+    }
+
 }
