@@ -1,100 +1,159 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Dashboard</title>
-    <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="grid.css" />
 
-  </head>
-  <body> 
-    <div class="container">  <!-- inicio del container -->
-      <div class="row"> <!-- inicio primer row -->
-            <div class="col-3 primera_seccionuno"> <img src="img/Logofondoblanco.JPG" alt="">  </div>
-            <div class="col-9 primera_seccion">  <H2>  Dashboard Laboratoria   </H2>  </div>
-      </div> <!-- fin primer row -->
+<head>
+	<meta charset="utf-8">
+	<title>Data Dashboard</title>
+	<link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="grid.css" />
 
-      <div class="row"> <!-- inicio segundo row -->
-          <div class="col-4 segunda_seccion"> 
-              <select id="menupais">
-                  <option value="Brasil">Brasil</option>
-                  <option value="Chile">Chile</option>
-                  <option value="Mexico">Mexico</option>
-                  <option value="Peru">Peru</option>
-              </select>
-          </div>
+</head>
 
-          <div class="col-4 segunda_seccion"> 
-              <select id="menupais">
-                  <option value="Chileam">scl20181-am</option>
-                  <option value="Chilepm">scl20181-pm</option>
-                  <option value="Mexicoam">mex20181-am</option>
-                  <option value="Mexicopm">mex20181-am </option>
-              </select>
-          </div>
+<body>
+	<div class="container">
+		<!-- inicio del container -->
+		<div class="row">
+			<!-- inicio primer row -->
+			<div class="col-3 primera_seccionuno">
+				<img src="img/Logofondoblanco.JPG" alt=""> </div>
+			<div class="col-9 primera_seccion">
+				<H2> Dashboard Laboratoria </H2>
+			</div>
+		</div>
+		<!-- fin primer row -->
 
-      </div> <!-- FIN segundo row -->
+		<div class="row">
+			<!-- inicio segundo row -->
+			<div class="col-4 segunda_seccion">
+				<select id="menupais">
+					<option value="Brasil">Brasil</option>
+					<option value="Chile">Chile</option>
+					<option value="Mexico">Mexico</option>
+					<option value="Peru">Peru</option>
+				</select>
+			</div>
 
-      <div class="row"> <!-- inicio tercer row -->
-            <div class="col-2 vertical-menu">
-                <a href="#" class="activate">¡Bienvenida!</a>
-                <a href="#">DataDashboard</a>
-                <a href="#">Configuración</a>
-                <a href="#">Ayuda</a>
-            </div>
-    
-            <div class="col-3 tercera_secciondos"> 
-                <button id="botonuno"> Visión General </button>
-                <p> Número de alumnas inscritas: este número puede ser muy grande y muy chico, te sorprendera </p>
-                <p>estas son otras cosas de las alumnas</p>
-            </div>
+			<div class="col-4 segunda_seccion">
+				<select id="menupais">
+					<option value="Chileam">scl20181-am</option>
+					<option value="Chilepm">scl20181-pm</option>
+					<option value="Mexicoam">mex20181-am</option>
+					<option value="Mexicopm">mex20181-am </option>
+				</select>
+			</div>
 
-            <div class="col-3 tercera_secciondos"> 
-            <button id="botondos"> Estudiantes </button>
-                <p>Número de alumnas que han desertado: este número va en aumento porque hace frío. </p>
-  
-            </div>
+		</div>
+		<!-- FIN segundo row -->
 
-            <div class="col-4 tercera_secciondos">
-            <button id="botontres"> Profesores </button>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia ligula vel tellus laoreet, sit amet pulvinar dolor bibendum. In ut egestas enim. In imperdiet nunc a lacus sagittis, vitae consectetur sapien rutrum. Pellentesque ut libero tincidunt, tristique tellus quis, tristique ante. Sed sit amet gravida lectus. Morbi dapibus facilisis nulla semper auctor. Phasellus a aliquam nisi, a dictum purus. Integer vitae interdum erat. Nulla diam lectus, semper eget commodo a, euismod a nunc. </p>
-            </div>
+		<div class="row">
+			<!-- inicio tercer row -->
+			<div class="col-2 vertical-menu">
+				<a href="#" class="activate">¡Bienvenida!</a>
+				<a href="#">DataDashboard</a>
+				<a href="#">Configuración</a>
+				<a href="#">Ayuda</a>
+			</div>
 
-         </div> <!-- FIN tercer row -->
+			<div class="col-3 tercera_secciondos">
+				<button id="botonuno"> Visión General </button>
+				<p id="textouno"></p>
+				<p> Número de alumnas inscritas: este número puede ser muy grande y muy chico, te sorprendera </p>
+				<p>estas son otras cosas de las alumnas</p>
+			</div>
 
-            <div class="row"> <!-- inicio cuarto row -->
+			<div class="col-3 tercera_secciondos">
+				<button id="botondos"> Estudiantes </button>
+				<p id="textodos"></p>
+				<p>Número de alumnas que han desertado: este número va en aumento porque hace frío. </p>
 
-                <div class="col-3 cuarta_seccion"> 
-                    
-                    
-                </div>
-    
-                <div class="col-3 cuarta_seccion"> 
-                    
-                </div>
-    
-                <div class="col-4 cuarta_seccion"> 
-                        
-                </div>
+			</div>
 
-                
-             </div> <!-- fin cuarto row -->
+			<div class="col-4 tercera_secciondos">
+				<button id="botontres"> Profesores </button>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia ligula vel tellus laoreet, sit amet pulvinar
+					dolor bibendum. In ut egestas enim. In imperdiet nunc a lacus sagittis, vitae consectetur sapien rutrum. Pellentesque
+					ut libero tincidunt, tristique tellus quis, tristique ante. Sed sit amet gravida lectus. Morbi dapibus facilisis nulla
+					semper auctor. Phasellus a aliquam nisi, a dictum purus. Integer vitae interdum erat. Nulla diam lectus, semper eget
+					commodo a, euismod a nunc. </p>
+			</div>
 
-            <div class="row">
-                <div class="col-6 quinta_seccion">
+		</div>
+		<!-- FIN tercer row -->
 
-                </div>
+		<div class="row">
+			<!-- inicio cuarto row -->
 
-                <div class="col-6 quinta_seccion">
-                        <button id="botoncuatro"> Descarga el archivo en Excel </button>
-                </div>
+			<div class="col-3 cuarta_seccion">
 
-            </div>
 
-      <script src="main.js"></script>
-      <script src="data.js"></script>
+			</div>
 
-    </div> <!-- fin del container -->
-  </body>
+			<div class="col-3 cuarta_seccion">
+
+			</div>
+
+			<div class="col-4 cuarta_seccion">
+
+			</div>
+
+
+		</div>
+		<!-- fin cuarto row -->
+
+		<div class="row">
+			<div class="col-6 quinta_seccion">
+
+			</div>
+
+			<div class="col-6 quinta_seccion">
+				<button id="botoncuatro"> Descarga el archivo en Excel </button>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-2 tabla">
+				<table class="mi_tabla">
+					<!--TABLA DE 3X3-->
+					<tr>
+						<!-- PRIMERA FILA   tr : crea las filas -->
+						<th>Nombre</th>
+						<!--th : crea los encabezados de cada columna-->
+						<th>Lecturas</th>
+						<th>Ejercicios</th>
+						<th>Quiz</th>
+						<th>PorcentajeCurso</th>
+						<th>Seleccionar</th>
+					</tr>
+					<tr>
+						<!-- SEGUNDA FILA-->
+						<td>Juanita Perez</td>
+						<!--td : crea las siguientes filas-->
+						<td>20 %</td>
+						<td>15/20 </td>
+						<td>20 %</td>
+						<td>30 %</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<!-- TERCERA FILA-->
+						<td>Ana Gonzalez</td>
+						<!--td : crea las siguientes filas-->
+						<td>20 %</td>
+						<td>15/20 </td>
+						<td>20 %</td>
+						<td>30 %</td>
+						<td>-</td>
+					</tr>
+
+				</table>
+
+				<script src="main.js"></script>
+				<script src="data.js"></script>
+
+			</div>
+			<!-- fin del container -->
+</body>
+
 </html>
