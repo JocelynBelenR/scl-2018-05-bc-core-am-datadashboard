@@ -10,10 +10,6 @@
     font-family: 'Bitter', serif;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 img {
     width: 100%;
 }
@@ -61,7 +57,6 @@ img {
     font-family: 'Open Sans', sans-serif;
 }
 
-<<<<<<< HEAD
 .vertical-menu {
     width: 300px; /* Set a width if you like */
 }
@@ -89,6 +84,31 @@ p {
     padding: 30px;
 }
 
+.mi_tabla {
+    position: absolute;
+    text-align: left;
+    border: 2px solid rgb(133, 132, 132);
+    font-size: 15px;
+    width: 120px;
+}
+
+td {
+    text-align: center; 
+}
+
+#textouno {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#textodos {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 @media (min-width: 320px) and (max-width:768px) {
@@ -112,34 +132,4 @@ p {
         width: 100%; 
     }
 
-=======
-.mi_tabla {
-    position: absolute;
-    text-align: left;
-    border: 2px solid rgb(133, 132, 132);
-    font-size: 15px;
-    width: 120px;
-}
-
-td {
-    text-align: center; 
-}
-
-#textouno {
-    font-size: 16px;
-    text-align: center;
-    width: 160px;
-    margin: 40px 2px;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#textodos {
-    font-size: 16px;
-    text-align: center;
-    width: 160px;
-    margin: 40px 2px;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
->>>>>>> upstream/master
 }
