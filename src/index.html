@@ -4,156 +4,114 @@
 <head>
 	<meta charset="utf-8">
 	<title>Data Dashboard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="grid.css" />
 
 </head>
 
 <body>
-	<div class="container">
-		<!-- inicio del container -->
-		<div class="row">
-			<!-- inicio primer row -->
-			<div class="col-3 primera_seccionuno">
-				<img src="img/Logofondoblanco.JPG" alt=""> </div>
-			<div class="col-9 primera_seccion">
-				<H2> Dashboard Laboratoria </H2>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3 primera_seccionuno">
+					<img src="img/Logofondoblanco.JPG" alt=""> </div>
+				<div class="col-sm-9">
+					<b> DataDashboard </b>
+				</div>
 			</div>
+
+			<div class="row row_seleccion">
+				<div class="col-sm"> </div>
+				<div class="col-sm">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<label class="input-group-text" for="inputGroupSelect01">País</label>
+
+						</div>
+						<select class="custom-select" id="inputGroupSelect01">
+							<option selected>Brasil</option>
+							<option value="1">Chile</option>
+							<option value="2">Mexico</option>
+							<option value="3">País</option>
+						</select>
+					</div>
+				</div>
+
+
+				<div class="col-sm">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<label class="input-group-text" for="inputGroupSelect01">Cohort</label>
+						</div>
+						<select class="custom-select" id="inputGroupSelect01">
+							<option selected>scl20181-am</option>
+							<option value="1">scl20181-pm</option>
+							<option value="2">pr2018-am</option>
+							<option value="3">pr2018-am</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-3">
+
+				</div>
+				<div class="col-sm-3">
+					<button type="button" class="btn btn-primary btn-sm">Visión General</button>
+				</div>
+
+				<div class="col-sm-3">
+					<button type="button" class="btn btn-primary btn-sm">Alumnas</button>
+				</div>
+
+				<div class="col-sm-3">
+					<button type="button" class="btn btn-primary btn-sm">Profesores</button>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-6 col-md-3">.
+					<nav class="nav flex-column">
+						<a class="nav-link active" href="#!">Dashboard</a>
+						<a class="nav-link" href="#!">Configuración</a>
+						<a class="nav-link" href="#!">Ayuda</a>
+					</nav>
+				</div>
+				<div class="col-12 col-md-9">
+
+					<h1>Bienvenida</h1>
+
+					<p>Haz ingresado a la plataforma de Laboratoria para conocer el progreso de sus alumnas durante el bootcamp.</p>
+
+					<h3>Intrucciones</h3>
+
+					<p>1. Debes seleccionar el país del que quieres conocer el cohort de sus alumnas.</p>
+					<p>2. Después, selecciona el cohort al que quieras acceder.</p>
+					<p>3. Una vez adentro podras conocer una visión general del estado de ese cohort y del progreso que cada alumna ha tenido
+						por asignatura.</p>
+
+				</div>
+			</div>
+
+			<div class="row">
+
+			</div>
+
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			 crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			 crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+			 crossorigin="anonymous"></script>
+
+			<script src="main.js"></script>
+			<script src="data.js"></script>
+
 		</div>
-		<!-- fin primer row -->
-
-		<div class="row">
-			<!-- inicio segundo row -->
-			<div class="col-4 segunda_seccion">
-				<select id="menupais">
-					<option value="Brasil">Brasil</option>
-					<option value="Chile">Chile</option>
-					<option value="Mexico">Mexico</option>
-					<option value="Peru">Peru</option>
-				</select>
-			</div>
-
-			<div class="col-4 segunda_seccion">
-				<select id="menupais">
-					<option value="Chileam">scl20181-am</option>
-					<option value="Chilepm">scl20181-pm</option>
-					<option value="Mexicoam">mex20181-am</option>
-					<option value="Mexicopm">mex20181-am </option>
-				</select>
-			</div>
-
-		</div>
-		<!-- FIN segundo row -->
-
-		<div class="row">
-			<!-- inicio tercer row -->
-			<div class="col-2 vertical-menu">
-				<a href="#" class="activate">¡Bienvenida!</a>
-				<a href="#">DataDashboard</a>
-				<a href="#">Configuración</a>
-				<a href="#">Ayuda</a>
-			</div>
-
-			<div class="col-3 tercera_secciondos">
-				<button id="botonuno"> Visión General </button>
-				<p id="textouno"></p>
-				<p> Número de alumnas inscritas: este número puede ser muy grande y muy chico, te sorprendera </p>
-				<p>estas son otras cosas de las alumnas</p>
-			</div>
-
-			<div class="col-3 tercera_secciondos">
-				<button id="botondos"> Estudiantes </button>
-				<p id="textodos"></p>
-				<p>Número de alumnas que han desertado: este número va en aumento porque hace frío. </p>
-
-			</div>
-
-			<div class="col-4 tercera_secciondos">
-				<button id="botontres"> Profesores </button>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia ligula vel tellus laoreet, sit amet pulvinar
-					dolor bibendum. In ut egestas enim. In imperdiet nunc a lacus sagittis, vitae consectetur sapien rutrum. Pellentesque
-					ut libero tincidunt, tristique tellus quis, tristique ante. Sed sit amet gravida lectus. Morbi dapibus facilisis nulla
-					semper auctor. Phasellus a aliquam nisi, a dictum purus. Integer vitae interdum erat. Nulla diam lectus, semper eget
-					commodo a, euismod a nunc. </p>
-			</div>
-
-		</div>
-		<!-- FIN tercer row -->
-
-		<div class="row">
-			<!-- inicio cuarto row -->
-
-			<div class="col-3 cuarta_seccion">
-
-
-			</div>
-
-			<div class="col-3 cuarta_seccion">
-
-			</div>
-
-			<div class="col-4 cuarta_seccion">
-
-			</div>
-
-
-		</div>
-		<!-- fin cuarto row -->
-
-		<div class="row">
-			<div class="col-6 quinta_seccion">
-
-			</div>
-
-			<div class="col-6 quinta_seccion">
-				<button id="botoncuatro"> Descarga el archivo en Excel </button>
-			</div>
-
-		</div>
-
-		<div class="row">
-			<div class="col-2 tabla">
-				<table class="mi_tabla">
-					<!--TABLA DE 3X3-->
-					<tr>
-						<!-- PRIMERA FILA   tr : crea las filas -->
-						<th>Nombre</th>
-						<!--th : crea los encabezados de cada columna-->
-						<th>Lecturas</th>
-						<th>Ejercicios</th>
-						<th>Quiz</th>
-						<th>PorcentajeCurso</th>
-						<th>Seleccionar</th>
-					</tr>
-					<tr>
-						<!-- SEGUNDA FILA-->
-						<td>Juanita Perez</td>
-						<!--td : crea las siguientes filas-->
-						<td>20 %</td>
-						<td>15/20 </td>
-						<td>20 %</td>
-						<td>30 %</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<!-- TERCERA FILA-->
-						<td>Ana Gonzalez</td>
-						<!--td : crea las siguientes filas-->
-						<td>20 %</td>
-						<td>15/20 </td>
-						<td>20 %</td>
-						<td>30 %</td>
-						<td>-</td>
-					</tr>
-
-				</table>
-
-				<script src="main.js"></script>
-				<script src="data.js"></script>
-
-			</div>
-			<!-- fin del container -->
-</body>
+	</body>
 
 </html>
