@@ -1,15 +1,41 @@
-window.computeUsersStats = (users, progress, courses) => {
+const button = document.getElementById('alumnas');
+const container = document.getElementById('tabla');
 
-};
+const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
 
-window.sortUsers =(users, orderBy, orderDirection) => {
+fetch(usersJSON)
+  .then(response => response.json())
+  .then(data => {
+    renderUsers(data);
+  })
 
-};
+const renderUsers = data => {
+  button.addEventListener('click', () => {
+    const render = data.forEach(element => {
+      return alumnassss.innerHTML += `<p>${element.name}</p>`
 
-window.filterUsers =(users, search) => {
+    })
+    return render;
 
-};
+  })
+}
 
-window.processCohortData =(options) => {
+/*const dataJson = {"name":"Lizeth","timezone":"America/Lima"};
+  const objetoJson = JSON.stringify(dataJson.name + " " + dataJson.timezone);
+  document.getElementById("tabla").innerHTML = objetoJson;*/
 
-};
+  window.computeUsersStats = (users, progress, courses) => {
+
+  };
+  
+  window.sortUsers =(users, orderBy, orderDirection) => {
+  
+  };
+  
+  window.filterUsers =(users, search) => {
+  
+  };
+  
+  window.processCohortData =(options) => {
+  
+  };
