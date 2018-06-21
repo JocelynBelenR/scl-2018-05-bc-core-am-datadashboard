@@ -6,6 +6,7 @@ const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
 fetch(usersJSON)
   .then(response => response.json())
   .then(data => {
+    console.log(data);
     renderUsers(data);
   })
 
@@ -20,22 +21,23 @@ const renderUsers = data => {
   })
 }
 
+
 /*const dataJson = {"name":"Lizeth","timezone":"America/Lima"};
   const objetoJson = JSON.stringify(dataJson.name + " " + dataJson.timezone);
   document.getElementById("tabla").innerHTML = objetoJson;*/
 
-  window.computeUsersStats = (users, progress, courses) => {
+window.computeUsersStats = (users, progress, courses) => {
 
-  };
+};
   
-  window.sortUsers =(users, orderBy, orderDirection) => {
+window.sortUsers =(users, orderBy, orderDirection) => {
   
-  };
+};
   
-  window.filterUsers =(users, search) => {
+window.filterUsers =(users, search) => {
   
-  };
+};
   
-  window.processCohortData =(options) => {
+window.processCohortData =(options) => {
   
-  };
+};
