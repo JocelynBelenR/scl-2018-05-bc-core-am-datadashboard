@@ -1,3 +1,5 @@
+//Mostrar lista de usuarios 
+
 const button = document.getElementById('alumnas');
 const container = document.getElementById('tabla');
 
@@ -21,23 +23,65 @@ const renderUsers = data => {
   })
 }
 
+//Mostrar progreso de las alumnas 
+const progressJSON = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json';
 
-/*const dataJson = {"name":"Lizeth","timezone":"America/Lima"};
-  const objetoJson = JSON.stringify(dataJson.name + " " + dataJson.timezone);
-  document.getElementById("tabla").innerHTML = objetoJson;*/
+fetch(progressJSON)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    renderProgress(data);
+  })
+
+const renderProgress = data => {
+  button.addEventListener('click', () => {
+    const render = data.forEach(element => {
+      return progresos.innerHTML += `<p>${element.id}</p>`
+
+    })
+    return render;
+
+  })
+}
+
+//Mostrar cohorts de las alumnas
+const cohortsJSON = '../data/cohorts.json';
+
+fetch(cohortsJSON)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    renderCohorts(data);
+  })
+
+const renderCohorts = data => {
+  button.addEventListener('click', () => {
+    const render = data.forEach(element => {
+      return cohortss.innerHTML += `<p>${element.cohorts}</p>`
+
+    })
+    return render;
+
+  })
+}
+
+
+
+
+
 
 window.computeUsersStats = (users, progress, courses) => {
 
 };
-  
-window.sortUsers =(users, orderBy, orderDirection) => {
-  
+
+window.sortUsers = (users, orderBy, orderDirection) => {
+
 };
-  
-window.filterUsers =(users, search) => {
-  
+
+window.filterUsers = (users, search) => {
+
 };
-  
-window.processCohortData =(options) => {
-  
+
+window.processCohortData = (options) => {
+
 };
