@@ -15,7 +15,7 @@ fetch(usersJSON)
 const renderUsers = data => {
   button.addEventListener('click', () => {
     const render = data.forEach(element => {
-      return alumnassss.innerHTML += `<p>${element.name}</p>`
+      return alumnassss.innerHTML += `<p>${element.name.toUpperCase()}</p>`
 
     })
     return render;
@@ -36,7 +36,7 @@ fetch(progressJSON)
 const renderProgress = data => {
   button.addEventListener('click', () => {
     const render = data.forEach(element => {
-      return progresos.innerHTML += `<p>${element.id}</p>`
+      return progresos.innerHTML += `<p>${element.progress}</p>`
 
     })
     return render;
