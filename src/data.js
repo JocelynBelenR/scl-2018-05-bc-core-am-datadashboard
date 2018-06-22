@@ -68,8 +68,6 @@ const renderCohorts = data => {
 
 
 
-
-
 window.computeUsersStats = (users, progress, courses) => {
 
 };
