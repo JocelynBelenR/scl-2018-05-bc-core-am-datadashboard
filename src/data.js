@@ -66,11 +66,6 @@ window.onload = () => {
     })
   }
 
-
-
-
-
-
   window.computeUsersStats = (users, progress, courses) => {
 
 
@@ -83,12 +78,16 @@ window.onload = () => {
   //Barra de busqueda: declaramos la variable vacía que es donde se va ingresar el nombre que queremos buscar, por eso vamos
   //  al filtro 
   window.filterUsers = (users, search) => {
-    let newusers = [];
-    return users.filter((element) => {
-      return element.name.toUpperCase().indexOf(search.toLowerCase()) > -0;
-    });
-    console.log (filterUsers);
-  };
+    button.addEventListener('click', () => {
+      let newusers = [];
+      return users.filter((element) => {
+        return element.name.toUpperCase().indexOf(search.toLowerCase()) >= 0;
+        document.getElementById("alumnassss").innerHTML = " ";
+      });
+      return newusers;
+    })
+  }
+
 
   window.processCohortData = (options) => {
 
