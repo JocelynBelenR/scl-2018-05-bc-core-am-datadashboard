@@ -106,3 +106,11 @@ p {
 .thead-dark {
     background-color: #FF009E;
 }
+
+#barraB {
+    margin: 20px 0px 0px 0px;
+}
+
+#lista {
+    margin: 20px 0px;
+}
