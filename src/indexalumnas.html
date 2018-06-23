@@ -91,14 +91,16 @@
 
         <form class="form-inline my-2 my-lg-0">
           <div id="barraB">
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+              <input id="search" class="form-control mr-sm-2" type="search" placeholder="Buscar alumna" aria-label="Search">
+              <button id="busqueda"  class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+
           </div>
         </form>
    
         <button id="lista" type="button" class="btn btn-primary btn-sm">Todas las Alumnas</button>
    
    
-        <table id= "tabla" class="table">
+        <table id="tabla" class="table">
           <tr>
             <th>
               <b>Alumnas</b>

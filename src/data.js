@@ -68,35 +68,26 @@ window.onload = () => {
 
   window.computeUsersStats = (users, progress, courses) => {
 
+
   };
 
   window.sortUsers = (users, orderBy, orderDirection) => {
 
   };
 
-  window.filterUsers = (users, search) => { 
-    var newusers = [];
-    return users.filter((element) => {
-      return element.name.toLowerCase().indexOf(search.toLowerCase()) >= 0;
-    });
-    return newusers;
-  };
-  function myFunction() {
-    var input, filter, table, th, b, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("tabla");
-    th = th.getElementsByTagName("th");
-    for (i = 0; i < li.length; i++) {
-        b = th[i].getElementsByTagName("b")[0];
-        if (b.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            th[i].style.display = "";
-        } else {
-            th[i].style.display = "none";
-
-        }
-    }
+  //Barra de busqueda: declaramos la variable vacía que es donde se va ingresar el nombre que queremos buscar, por eso vamos
+  //  al filtro 
+  window.filterUsers = (users, search) => {
+    button.addEventListener('click', () => {
+      let newusers = [];
+      return users.filter((element) => {
+        return element.name.toUpperCase().indexOf(search.toLowerCase()) >= 0;
+        document.getElementById("alumnassss").innerHTML = " ";
+      });
+      return newusers;
+    })
   }
+
 
   window.processCohortData = (options) => {
 
